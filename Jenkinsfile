@@ -16,9 +16,9 @@ pipeline {
 
     // Build
     stage('Build') {
-      agent {
-        label 'node'
-      }
+      //agent {
+      //  label 'node'
+      //}
       steps {
         deleteDir()
         checkout scm
@@ -27,9 +27,9 @@ pipeline {
 
     // Static Code Analysis
     stage('Static Code Analysis') {
-      agent {
-        label 'node'
-      }
+      //agent {
+      //  label 'node'
+      //}
       steps {
         deleteDir()
         checkout scm
@@ -39,9 +39,9 @@ pipeline {
 
     // Unit Tests
     stage('Unit Tests') {
-      agent {
-        label 'node'
-      }
+      //agent {
+      //  label 'node'
+      //}
       steps {
         deleteDir()
         checkout scm
@@ -51,9 +51,9 @@ pipeline {
 
     // Acceptance Tests
     stage('Acceptance Tests') {
-      agent {
-        label 'node'
-      }
+      //agent {
+      //  label 'node'
+      //}
       steps {
         deleteDir()
         checkout scm
